@@ -12,24 +12,19 @@
         outputArray;
 
     // Reduce with Normal Function and Initial Passed and outputArray '65'
-    // outputArray = sampleArray.reduce(function (accumulator, currentValue) {
-    //     return accumulator + currentValue;
-    // }, 10);
+    outputArray = sampleArray.reduce(function (accumulator, currentValue) {
+        return accumulator + currentValue;
+    }, 10);
 
     // Reduce with Normal Function and Initial Not Passed and outputArray '55'
-    /** so its consider '0' is the Initial value
-     *  or we can says the first element of array values passed as Initial value
-     *  accumulator is previous values or sum of the values and going to return it at the last
-     *  currentValues is array passed current element 
-     * */
-    // outputArray = sampleArray.reduce(function (accumulator, currentValue) {
-    //     return accumulator + currentValue;
-    // });
+    outputArray = sampleArray.reduce(function (accumulator, currentValue) {
+        return accumulator + currentValue;
+    });
 
     // Reduce with Arrow Function
-    // outputArray = sampleArray.reduce((accumulator, currentValue) => {
-    //     return accumulator + currentValue;
-    // });
+    outputArray = sampleArray.reduce((accumulator, currentValue) => {
+        return accumulator + currentValue;
+    });
 
     // Reduce with Arrow Function and single statment
     outputArray = sampleArray.reduce((accumulator, currentValue) => accumulator + currentValue, 10);
@@ -71,14 +66,14 @@
         outputArray;
 
     // Reduce with Normal Function
-    // outputArray = sampleArray.reduce(function (accumulator, currentValue) {
-    //     return [...accumulator, currentValue.place];
-    // }, []);
+    outputArray = sampleArray.reduce(function (accumulator, currentValue) {
+        return [...accumulator, currentValue.place];
+    }, []);
 
     // Reduce with Arrow Function
-    // outputArray = sampleArray.reduce((accumulator, currentValue) => {
-    //     return [...accumulator, currentValue.place];
-    // }, []);
+    outputArray = sampleArray.reduce((accumulator, currentValue) => {
+        return [...accumulator, currentValue.place];
+    }, []);
 
     // Reduce with Arrow Function and single statment
     outputArray = sampleArray.reduce((accumulator, currentValue) => [...accumulator, currentValue.place], []);
