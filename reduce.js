@@ -1,4 +1,11 @@
 (function () {
+
+    // The reduce() method is used to apply a function to each element in the array to reduce the array to a single value.
+
+    // Ref. https://codeburst.io/learn-understand-javascripts-reduce-function-b2b0406efbdc
+
+    // Chaining Map, Filter, and Reduce -> Ref. https://codeburst.io/javascript-learn-to-chain-map-filter-and-reduce-acd2d0562cd4
+
     /**
      * Simple Array Reduce, it takes callback function (it is mandatory and it will allow four params but 1 and 2 is mandatory) and initial value (it is optional)
      *  accumulator is previous values or sum of the values and going to
@@ -9,28 +16,28 @@
     */
 
     var sampleArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-        outputArray;
+        outputValue;  // It is not an array
 
-    // Reduce with Normal Function and Initial Passed and outputArray '65'
-    outputArray = sampleArray.reduce(function (accumulator, currentValue) {
+    // Reduce with Normal Function and Initial Passed and outputValue '65'
+    outputValue = sampleArray.reduce(function (accumulator, currentValue) {
         return accumulator + currentValue;
     }, 10);
 
-    // Reduce with Normal Function and Initial Not Passed and outputArray '55'
-    outputArray = sampleArray.reduce(function (accumulator, currentValue) {
+    // Reduce with Normal Function and Initial Not Passed and outputValue '55'
+    outputValue = sampleArray.reduce(function (accumulator, currentValue) {
         return accumulator + currentValue;
     });
 
     // Reduce with Arrow Function
-    outputArray = sampleArray.reduce((accumulator, currentValue) => {
+    outputValue = sampleArray.reduce((accumulator, currentValue) => {
         return accumulator + currentValue;
     });
 
     // Reduce with Arrow Function and single statment
-    outputArray = sampleArray.reduce((accumulator, currentValue) => accumulator + currentValue, 10);
+    outputValue = sampleArray.reduce((accumulator, currentValue) => accumulator + currentValue, 10);
 
     console.log('====================================');
-    console.log('outputArray:-', outputArray);
+    console.log('outputValue:-', outputValue);
     console.log('====================================');
 
     /**
@@ -63,23 +70,23 @@
                 "year": 2019
             }
         ],
-        outputArray;
+        outputValue;
 
     // Reduce with Normal Function
-    outputArray = sampleArray.reduce(function (accumulator, currentValue) {
+    outputValue = sampleArray.reduce(function (accumulator, currentValue) {
         return [...accumulator, currentValue.place];
     }, []);
 
     // Reduce with Arrow Function
-    outputArray = sampleArray.reduce((accumulator, currentValue) => {
+    outputValue = sampleArray.reduce((accumulator, currentValue) => {
         return [...accumulator, currentValue.place];
     }, []);
 
     // Reduce with Arrow Function and single statment
-    outputArray = sampleArray.reduce((accumulator, currentValue) => [...accumulator, currentValue.place], []);
+    outputValue = sampleArray.reduce((accumulator, currentValue) => [...accumulator, currentValue.place], []);
 
     console.log('====================================');
-    console.log('outputArray:-', outputArray);
+    console.log('outputValue:-', outputValue);
     console.log('====================================');
 
 })();

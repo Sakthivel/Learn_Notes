@@ -1,4 +1,11 @@
 (function(){
+
+    //The filter() method returns a new array created from all elements that pass a certain test preformed on an original array.
+
+    // Ref. https://codeburst.io/learn-understand-javascripts-filter-function-bde87bce206
+    
+    // Chaining Map, Filter, and Reduce -> Ref. https://codeburst.io/javascript-learn-to-chain-map-filter-and-reduce-acd2d0562cd4
+
     /**
     Simple Array Filter 
     */

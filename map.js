@@ -1,4 +1,11 @@
 (function(){
+
+    // The map() method is used to apply a function on every element in an array. A new array is then returned.
+
+    // Ref. https://codeburst.io/learn-understand-javascripts-map-function-ffc059264783
+
+    // Chaining Map, Filter, and Reduce -> Ref. https://codeburst.io/javascript-learn-to-chain-map-filter-and-reduce-acd2d0562cd4
+    
     /**
     Simple Array Map 
     */
